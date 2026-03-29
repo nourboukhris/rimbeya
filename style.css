@@ -253,15 +253,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px; /* largeur pour 3 colonnes */
+  max-width: 1200px;
+  /* largeur pour 3 colonnes */
   margin: 0 auto;
   gap: 40px;
-  flex-wrap: wrap; /* permet de passer en pile sur mobile */
+  flex-wrap: wrap;
+  /* permet de passer en pile sur mobile */
 }
 
 /* Colonnes Contact */
 .contact-column {
-  flex: 1 1 300px; /* chaque colonne flexible, min 300px */
+  flex: 1 1 300px;
+  /* chaque colonne flexible, min 300px */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -349,10 +352,13 @@ body {
   background: #0b1e5a;
   color: white;
 }
-.social-btn.google:hover {   
-  background-color: #db4437; /* rouge Google */
+
+.social-btn.google:hover {
+  background-color: #db4437;
+  /* rouge Google */
   color: #fff;
 }
+
 .social-section h2 {
   font-size: 32px;
   margin-bottom: 40px;
@@ -561,7 +567,6 @@ body {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
-  float: right;
 }
 
 .hamburger span {
@@ -645,6 +650,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 8px;
+
 }
 
 /* Sprach-Pills */
@@ -661,6 +667,13 @@ body {
   background: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
   border-radius: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+.languages-clean span:hover {
+  transform: scale(1.1);
+  /* ykber shwaya */
 }
 
 /* Flags */
