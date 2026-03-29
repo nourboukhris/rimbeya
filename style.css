@@ -349,7 +349,10 @@ body {
   background: #0b1e5a;
   color: white;
 }
-
+.social-btn.google:hover {   
+  background-color: #db4437; /* rouge Google */
+  color: #fff;
+}
 .social-section h2 {
   font-size: 32px;
   margin-bottom: 40px;
@@ -636,3 +639,41 @@ body {
   }
 }
 
+/* Label oben */
+.languages-label {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Sprach-Pills */
+.languages-clean {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.languages-clean span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Flags */
+.languages-clean img {
+  width: 18px;
+  height: 12px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .languages-clean {
+    justify-content: center;
+    text-align: center;
+  }
+}
